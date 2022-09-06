@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tailwind</title>
+</head>
+
+<body>
+
+    <nav
+        class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0">
+            <a href="index.html" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Hem</a>
+        </div>
+        <div>
+            <a href="ramverk1.html" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Milligram</a>
+            <a href="ramverk2.html" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Tailwind</a>
+            <a href="publicering.html" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Publicering</a>
+        </div>
+    </nav>
+
+    <h1 class="text-5xl text-red-600 text-center mt-10">Tailwind</h1>
+    <div class="text-center mt-5 mb-5">
+        <p class="underline mb-2"> <a href="https://tailwindcss.com/">Länk till webbplatsen </a></p>
+        <p>Ett större ramverk som innehåller många olika klasser med olika användningsområden.</p>
+        <p>Tailwind använder framför allt olika så kallade "utility classes". </p>
+        <p>T.ex "bg-blue" är klassen för en blå bakgrundsfärg. Ett ramverk som kan användas till mycket</p>
+        <p>och kan användas till att style:a det mesta på en webbplats.</p>
+
+        <p class="mt-3 font-bold">Fördelar: </p>
+        <p>Relativt enkelt att installera. Enkelt att använda.</p>
+        <p>Många olika klasser och lätt att läsa sig till information i dokumentationen.</p>
+        <p class="font-bold">Nackdelar: </p>
+        <p>Koden blir väldigt plottrig när det ska användas så många olika klasser.</p>
+        <p>För någon som kan CSS känns detta ibland lite omständigt och långsammare än vanlig CSS.</p>
+    </div>
+
+
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Namn
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Ålder
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Favoritartist
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Favoritfärg
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Lisa
+                    </th>
+                    <td class="py-4 px-6">
+                        28
+                    </td>
+                    <td class="py-4 px-6">
+                        Harry Styles
+                    </td>
+                    <td class="py-4 px-6">
+                        Rosa
+                    </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Lina
+                    </th>
+                    <td class="py-4 px-6">
+                        27
+                    </td>
+                    <td class="py-4 px-6">
+                        Taylor Swift
+                    </td>
+                    <td class="py-4 px-6">
+                        Blå
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Sora
+                    </th>
+                    <td class="py-4 px-6">
+                        18
+                    </td>
+                    <td class="py-4 px-6">
+                        Utada Hikaru
+                    </td>
+                    <td class="py-4 px-6">
+                        Röd
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Jigsaw
+                    </th>
+                    <td class="py-4 px-6">
+                        100
+                    </td>
+                    <td class="py-4 px-6">
+                        Charlie Clouser
+                    </td>
+                    <td class="py-4 px-6">
+                        Svart
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Harry
+                    </th>
+                    <td class="py-4 px-6">
+                        28
+                    </td>
+                    <td class="py-4 px-6">
+                        Niall Horan
+                    </td>
+                    <td class="py-4 px-6">
+                        Lila
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h2 class="text-red-800 text-center font-bold mt-5">Lägg till data</h2>
+
+    <form>
+        <div class="flex flex-col 
+                    items-center justify-center">
+            <div class="mb-6 w-2/5">
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Namn</label>
+                <input type="name" id="name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="namn" required>
+            </div>
+            <div class="mb-6 w-2/5">
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Välj
+                    ålder
+                </label>
+                <select id="age"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>0-10</option>
+                    <option>10-20</option>
+                    <option>20-30</option>
+                    <option>30-40</option>
+                    <option>40-50</option>
+                    <option>50-60</option>
+                </select>
+            </div>
+            <div class="mb-6 w-2/5">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Din
+                    favoritlåt</label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Leave a comment..."></textarea>
+
+            </div>
+            <div class="flex items-start mb-6">
+                <div class="flex items-center h-5">
+                    <input id="remember" type="checkbox" value=""
+                        class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                        required>
+                </div>
+                <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Godkänn</label>
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Lägg
+                till</button>
+        </div>
+
+    </form>
+
+    </div>
+
+
+</body>
+
+</html>

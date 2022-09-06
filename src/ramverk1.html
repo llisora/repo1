@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <title>Milligram</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="index.html">Hem</a>
+        <a href="ramverk1.html" >Milligram</a>
+        <a href="ramverk2.html">Tailwind</a>
+        <a href="publicering.html">Publicering</a>
+    </nav>
+    <div style="text-align: center">
+        <h1>Milligram</h1>
+        <p class="underline"> <a href="https://milligram.io/">Länk till webbplatsen </a></p>
+        <p>Milligram är ett mindre ramverk som är enkelt att lära sig och hantera.</p>
+        <p>Koden blir stilren och lättläst. Riktar sig framför allt in på "grunden" för hemsidan.</p>
+        <p>Fördelar: </p>
+        <ul>
+            <li>Simpel, stilren och lättläst kod.</li>
+            <li>Enkel att installera.</li>
+            <li>Bra att börja med om man vill få en känsla av vad ett ramverk kan vara.</li>
+        </ul>
+        <p>Nackdelar:</p>
+        <ul>
+            <li>Lite funktionalitet.</li>
+            <li>Används mest som en "mall" och kanske inte främst för att "style:a".</li>
+        </ul>
+        <p>Denna sida är endast style:ad med milligram och då syns tydligt begränsningarna om man jämför med t.ex
+            Tailwind.
+        </p>
+    </div>
+    <div style="width:60%; margin: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Favoritfärg</th>
+                    <th>Ålder</th>
+                    <th>Kommentar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lisa</td>
+                    <td>Rosa</td>
+                    <td>24+</td>
+                    <td>Hmmm...</td>
+                </tr>
+                <tr>
+                    <td>Sara</td>
+                    <td>Grön</td>
+                    <td>18-23</td>
+                    <td>Halli hallå!</td>
+                </tr>
+                <tr>
+                    <td>Anders</td>
+                    <td>Blå</td>
+                    <td>24+</td>
+                    <td>Jag heter Anders</td>
+                </tr>
+                <tr>
+                    <td>Bertil</td>
+                    <td>Brun</td>
+                    <td>24+</td>
+                    <td>Jag heter Anders</td>
+                </tr>
+                <tr>
+                    <td>Kajsa</td>
+                    <td>Grå</td>
+                    <td>0-13</td>
+                    <td>Hihi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <fieldset>
+                <label for="nameField">Namn</label>
+                <input type="text" placeholder="Favoritfärg" id="nameField">
+                <label for="nameField">Favoritfärg</label>
+                <input type="text" placeholder="Ålder" id="nameField">
+                <label for="ageRangeField">Ålder</label>
+                <select id="ageRangeField">
+                    <option value="0-13">0-13</option>
+                    <option value="14-17">14-17</option>
+                    <option value="18-23">18-23</option>
+                    <option value="24+">24+</option>
+                </select>
+                <label for="commentField">Valfri kommentar</label>
+                <textarea placeholder="Skriv något skoj" id="commentField"></textarea>
+                <div class="float-right">
+                    <input type="checkbox" id="confirmField">
+                    <label class="label-inline" for="confirmField">Godkänn</label>
+                </div>
+                <input class="button-primary" type="submit" value="Skicka">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
