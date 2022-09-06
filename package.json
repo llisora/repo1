@@ -1,0 +1,23 @@
+{
+  "name": "repo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwind -i ./src/input.css -o ./src/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llisora/repo1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llisora/repo1/issues"
+  },
+  "homepage": "https://github.com/llisora/repo1#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
